@@ -1,5 +1,3 @@
 venv
 .vscode
-example.py
 __pycache__
-process_manager.egg-info

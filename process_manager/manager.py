@@ -1,5 +1,5 @@
-from process_manager.constants import ProcessManagerItemStatus
-from process_manager.process_manager_item import ProcessMangerItem
+from .constants import ProcessManagerItemStatus
+from .manager_item import ProcessManagerItem
 
 class ProcessManager:
     def __init__(self, configs = [], auto_start = True):
@@ -9,7 +9,7 @@ class ProcessManager:
         print("START PROCESS INITIALIZING")
         for config in configs:
             for i in range(0, config.workers_count):
-                item = ProcessMangerItem(id, config)
+                item = ProcessManagerItem(id, config)
                 self.processes.append(item)
         print("DONE PROCESS INITIALIZING")
 

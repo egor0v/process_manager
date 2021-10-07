@@ -1,9 +1,9 @@
 import multiprocessing
 import traceback
-from process_manager.constants import ProcessManagerItemStatus
-from process_manager.process_config import ProcessConfig
+from .constants import ProcessManagerItemStatus
+from .config import ProcessConfig
 
-class ProcessMangerItem:
+class ProcessManagerItem:
     def __init__(self, id, config: ProcessConfig):
         self.id = id
         self.config = config

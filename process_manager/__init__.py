@@ -1,1 +1,1 @@
-__all__ = ['constants', 'process_config', 'process_manager_item', 'process_manager']
+__all__ = ['manager', 'constants', 'config', 'manager_item']
